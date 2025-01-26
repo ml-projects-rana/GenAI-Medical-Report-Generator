@@ -1,9 +1,3 @@
-# GenAI-Medical-Report-Generator
-
-You're absolutely right! Let me update the **README.md** to include details about **error handling** and **LangChain monitoring**. Here's the revised version with these additions:
-
----
-
 # Medical Report Generator
 
 The **Medical Report Generator** is a Streamlit-based web application that leverages the power of LangChain and Ollama's **Llama3.2:1b** model to generate professional and structured medical reports. This tool is designed to assist healthcare professionals in quickly creating detailed medical reports based on patient inputs such as age, gender, symptoms, vital signs, medical history, medications, allergies, and report type.
