@@ -1,18 +1,23 @@
 # GenAI-Medical-Report-Generator
 
+You're absolutely right! Let me update the **README.md** to include details about **error handling** and **LangChain monitoring**. Here's the revised version with these additions:
+
+---
+
 # Medical Report Generator
 
-The **Medical Report Generator** is a Streamlit-based web application that leverages the power of LangChain and Ollama's LLaMA model to generate professional and structured medical reports. This tool is designed to assist healthcare professionals in quickly creating detailed medical reports based on patient inputs such as age, gender, symptoms, vital signs, medical history, medications, allergies, and report type.
+The **Medical Report Generator** is a Streamlit-based web application that leverages the power of LangChain and Ollama's **Llama3.2:1b** model to generate professional and structured medical reports. This tool is designed to assist healthcare professionals in quickly creating detailed medical reports based on patient inputs such as age, gender, symptoms, vital signs, medical history, medications, allergies, and report type.
 
 ---
 
 ## Features
 
 - **Interactive Web Interface**: Built using Streamlit, the application provides an intuitive and user-friendly interface for entering patient data.
-- **AI-Powered Report Generation**: Utilizes the Ollama LLaMA model to generate structured medical reports with sections like Chief Complaint, History of Present Illness, Relevant Medical History, Medications, Allergies, Vital Signs, Assessment, Possible Diagnoses, Recommended Tests, Patient Education, Risk Assessment, Plan, and Follow-Up.
+- **AI-Powered Report Generation**: Utilizes the **Llama3.2:1b** model to generate structured medical reports with sections like Chief Complaint, History of Present Illness, Relevant Medical History, Medications, Allergies, Vital Signs, Assessment, Possible Diagnoses, Recommended Tests, Patient Education, Risk Assessment, Plan, and Follow-Up.
 - **Customizable Inputs**: Users can input patient-specific details, and the application dynamically generates a tailored medical report.
 - **Markdown Formatting**: The generated report is displayed in a clean and professional Markdown format for easy readability.
-- **Error Handling**: The application includes validation for mandatory fields and provides meaningful error messages.
+- **Error Handling**: The application includes validation for mandatory fields and provides meaningful error messages if any required fields are missing or if an error occurs during report generation.
+- **LangChain Monitoring**: Integrated with LangChain for tracking and monitoring the AI model's performance and usage.
 
 ---
 
@@ -23,6 +28,7 @@ Before running the application, ensure you have the following installed:
 1. **Python 3.10**: The application is built using Python 3.10.
 2. **Conda**: For managing the virtual environment.
 3. **Git**: For cloning the repository.
+4. **Ollama**: For running the **Llama3.2:1b** model locally.
 
 ---
 
@@ -70,12 +76,12 @@ LANGCHAIN_PROJECT=your_langchain_project_name
 
 Replace `your_langchain_api_key` and `your_langchain_project_name` with your actual LangChain API key and project name.
 
-### Step 2: Download the Ollama LLaMA Model
+### Step 2: Download the Ollama Llama3.2:1b Model
 
-Ensure you have downloaded the Ollama LLaMA model (`llama2`) or any other supported model. You can download it using the following command:
+Ensure you have downloaded the Ollama **Llama3.2:1b** model. You can download it using the following command:
 
 ```bash
-ollama pull llama2
+ollama pull llama3.2:1b
 ```
 
 ---
@@ -182,10 +188,13 @@ The patient should follow up with his primary care physician for ongoing managem
 
 1. **Streamlit Web Application**: Created an interactive web interface using Streamlit for entering patient data and generating medical reports.
 2. **LangChain Integration**: Integrated LangChain to manage the AI model and generate structured medical reports.
-3. **Ollama LLaMA Model**: Utilized the Ollama LLaMA model for generating high-quality, professional medical reports.
+3. **Ollama Llama3.2:1b Model**: Utilized the **Llama3.2:1b** model for generating high-quality, professional medical reports.
 4. **Environment Management**: Set up a Conda environment for dependency management and reproducibility.
-5. **Error Handling**: Implemented validation for mandatory fields and error handling for a smooth user experience.
-6. **Markdown Formatting**: Ensured the generated report is displayed in a clean and professional Markdown format.
+5. **Error Handling**: Implemented validation for mandatory fields and error handling for a smooth user experience. If any required fields are missing, the application displays a clear error message. Additionally, if an error occurs during report generation, the application provides a meaningful error message to the user.
+6. **LangChain Monitoring**: Integrated LangChain for tracking and monitoring the AI model's performance and usage. This includes:
+   - Enabling LangChain tracing using `LANGCHAIN_TRACING_V2="true"`.
+   - Setting up the LangChain API key and project name for monitoring.
+7. **Markdown Formatting**: Ensured the generated report is displayed in a clean and professional Markdown format.
 
 ---
 
@@ -218,14 +227,38 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - **Streamlit**: For providing an excellent framework for building interactive web applications.
-- **LangChain**: For enabling seamless integration with AI models.
-- **Ollama**: For providing the LLaMA model used in this project.
+- **LangChain**: For enabling seamless integration with AI models and monitoring.
+- **Ollama**: For providing the **Llama3.2:1b** model used in this project.
 
 ---
 
 ## Contact
 
 For any questions or feedback, feel free to reach out:
+
+- **Email**: your.email@example.com
+- **LinkedIn**: [Dipanshu Rana](https://www.linkedin.com/in/dipanshu-rana/)
+
+---
+
+Enjoy using the **Medical Report Generator**! 🚀
+
+---
+
+### **Error Handling Details**
+The application includes robust error handling to ensure a smooth user experience:
+- **Mandatory Field Validation**: If any required fields (e.g., Age, Gender, Primary Symptoms, etc.) are missing, the application displays a clear error message listing the missing fields.
+- **Report Generation Errors**: If an error occurs during report generation (e.g., due to model issues or network problems), the application catches the exception and displays a user-friendly error message.
+
+### **LangChain Monitoring Details**
+LangChain monitoring is enabled to track the AI model's performance and usage:
+- **Tracing**: LangChain tracing is enabled using `LANGCHAIN_TRACING_V2="true"`.
+- **API Key and Project**: The LangChain API key and project name are configured in the `.env` file for monitoring purposes.
+- **Usage Insights**: LangChain provides insights into how the model is being used, including response times, success rates, and error rates.
+
+---
+
+This updated **README.md** now includes detailed information about **error handling** and **LangChain monitoring**. Let me know if you need further adjustments! 😊
 
 - **Email**: dipanshurana04@gmail.com
 - **LinkedIn** : Dipanshu Rana
