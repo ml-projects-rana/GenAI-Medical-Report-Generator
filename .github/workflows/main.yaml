@@ -1,9 +1,9 @@
-name: Sync to Hugging Face hub
+name: Sync to Hugging Face Hub
 on:
   push:
-    branches: [master]
+    branches: [master]  # Trigger on pushes to the 'master' branch
 
-  # to run this workflow manually from the Actions tab
+  # Allow manual triggering from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -13,8 +13,17 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          lfs: true
-      - name: Push to hub
+          lfs: true  # Enable Git LFS if needed
+
+      - name: Push to Hugging Face Hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Ranaratcricketicetea:$HF_TOKEN@huggingface.co/spaces/Ranaratcricketicetea/Medical_Report_Generator main
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # Hugging Face token stored in GitHub Secrets
+        run: |
+          # Add Hugging Face remote
+          git remote add hub https://Ranaratcricketicetea:$HF_TOKEN@huggingface.co/spaces/Ranaratcricketicetea/Medical_Report_Generator
+          
+          # Fetch the latest changes from Hugging Face
+          git fetch hub main
+          
+          # Push the local master branch to Hugging Face's main branch
+          git push hub master:main
