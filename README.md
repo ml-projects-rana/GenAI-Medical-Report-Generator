@@ -5,10 +5,6 @@ The **Medical Report Generator** is a Streamlit-based web application that lever
 ## Web Application Demo
 https://github.com/user-attachments/assets/acc1cdeb-5bd3-43ba-942c-a7bc1e974bf6
 
-## Medical Report (PDF)
-You can view an example of the generated medical report here:  
-
-[Output Sample](https://github.com/ml-projects-rana/GenAI-Medical-Report-Generator/blob/master/Output_Sample.pdf)
 ---
 
 ## Features
