@@ -226,18 +226,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Contact
-
-For any questions or feedback, feel free to reach out:
-
-- **Email**: your.email@example.com
-- **LinkedIn**: [Dipanshu Rana](https://www.linkedin.com/in/dipanshu-rana/)
-
----
-
-Enjoy using the **Medical Report Generator**! 🚀
-
----
 
 ### **Error Handling Details**
 The application includes robust error handling to ensure a smooth user experience:
@@ -249,10 +237,22 @@ LangChain monitoring is enabled to track the AI model's performance and usage:
 - **Tracing**: LangChain tracing is enabled using `LANGCHAIN_TRACING_V2="true"`.
 - **API Key and Project**: The LangChain API key and project name are configured in the `.env` file for monitoring purposes.
 - **Usage Insights**: LangChain provides insights into how the model is being used, including response times, success rates, and error rates.
+---
+
+## Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Email**: dipanshurana04@gmail.com
+- **LinkedIn**: [Dipanshu Rana](https://www.linkedin.com/in/dipanshu-rana/)
 
 ---
 
-This updated **README.md** now includes detailed information about **error handling** and **LangChain monitoring**. Let me know if you need further adjustments! 😊
+Enjoy using the **Medical Report Generator**! 🚀
+
+---
+
+
 
 - **Email**: dipanshurana04@gmail.com
 - **LinkedIn** : Dipanshu Rana
