@@ -2,8 +2,8 @@
 
 The **Medical Report Generator** is a Streamlit-based web application that leverages the power of LangChain and Ollama's **Llama3.2:1b** model to generate professional and structured medical reports. This tool is designed to assist healthcare professionals in quickly creating detailed medical reports based on patient inputs such as age, gender, symptoms, vital signs, medical history, medications, allergies, and report type.
 
-## Web Application Screenshot
-[![Screenshot 2025-01-26 223439](https://github.com/user-attachments/assets/a539c1ed-099b-4b91-8bcb-f32dd730b4ae)](https://github.com/ml-projects-rana/GenAI-Medical-Report-Generator/issues/1#issue-2811852416)
+## Web Application Demo
+https://github.com/user-attachments/assets/acc1cdeb-5bd3-43ba-942c-a7bc1e974bf6
 
 ## Example Output
 You can view an example of the generated medical report here:  
