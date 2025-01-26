@@ -22,8 +22,5 @@ jobs:
           # Add Hugging Face remote
           git remote add hub https://Ranaratcricketicetea:$HF_TOKEN@huggingface.co/spaces/Ranaratcricketicetea/Medical_Report_Generator
           
-          # Fetch the latest changes from Hugging Face
-          git fetch hub main
-          
-          # Push the local master branch to Hugging Face's main branch
-          git push hub master:main
+          # Force push the local master branch to Hugging Face's main branch
+          git push hub master:main --force
