@@ -227,12 +227,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 
-### **Error Handling Details**
+### Error Handling Details
 The application includes robust error handling to ensure a smooth user experience:
 - **Mandatory Field Validation**: If any required fields (e.g., Age, Gender, Primary Symptoms, etc.) are missing, the application displays a clear error message listing the missing fields.
 - **Report Generation Errors**: If an error occurs during report generation (e.g., due to model issues or network problems), the application catches the exception and displays a user-friendly error message.
 
-### **LangChain Monitoring Details**
+### LangChain Monitoring Details
 LangChain monitoring is enabled to track the AI model's performance and usage:
 - **Tracing**: LangChain tracing is enabled using `LANGCHAIN_TRACING_V2="true"`.
 - **API Key and Project**: The LangChain API key and project name are configured in the `.env` file for monitoring purposes.
@@ -252,11 +252,3 @@ Enjoy using the **Medical Report Generator**! 🚀
 
 ---
 
-
-
-- **Email**: dipanshurana04@gmail.com
-- **LinkedIn** : Dipanshu Rana
-
----
-
-Enjoy using the **Medical Report Generator**! 🚀
